@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <h1>Find Free Wifi</h1>
+		
+	<select>
+		<option *ng-for="#c of result;" value="{{c.Id}}" (click)="displayNearBy(c)">{{c.Name}}</option>
+	</select>   
+
+	<ul>
+		<li *ng-for="#nearbyPlaces of location;">{{nearbyPlaces.Name}}</li>
+	</ul>
+	
+  </body>
+</html>
